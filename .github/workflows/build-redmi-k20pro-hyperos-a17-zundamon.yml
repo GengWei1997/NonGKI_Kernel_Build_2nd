@@ -13,7 +13,7 @@ env:
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
 
   KERNEL_SOURCE : "https://github.com/GengWei1997/Zundamon_kernel_xiaomi_raphael.git"
-  KERNEL_BRANCH : "zundamon-evo-public"
+  KERNEL_BRANCH : "zundamon-evo-mountapi"
 
   CLANG_SOURCE : "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android17-release/clang-r596125.tar.gz"
   CLANG_BRANCH : ""
@@ -57,13 +57,13 @@ env:
   KERNELSU_METHOD: "shell" # shell, manual and only.
 
   PATCHES_SOURCE: "GengWei1997/NonGKI_Kernel_Patches" # [your_name]/[your_patch] -> gooder123/NonGKI_Patcher
-  PATCHES_BRANCH: "master" # [your_branch] -> main
+  PATCHES_BRANCH: "zundamon-evo-mountapi" # [your_branch] -> main
 
   SUSFS_FOLDER_FIXED: "k20p_hyperos_a17_zundamon" # Fill in your patch prefix directory here. Leave it blank if there isn't one. -> your_folder
   SUSFS_PATCH_FIXED: "susfs_fixed" # Fill in your patches here. If there are multiple patches, please separate them with a comma. Leave it blank if there isn't one. -> patch1,patch2
 
   REKERNEL_ENABLE: "false" # if u need Re:Kernel.
-  DROIDSPACES_ENABLE: "false" # if u need Droidspaces or LXC/Docker.
+  DROIDSPACES_ENABLE: "true" # if u need Droidspaces or LXC/Docker.
   NOMOUNT_ENABLE: "false" # if u need NoMount.
   FGETPRIORITY_ENABLE: "false" #if u need hide getpriority.
   VPNHIDE_ENABLE: "false" #if u need hide vpn status.
